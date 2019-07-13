@@ -1,3 +1,4 @@
 # CPPP-Exercise
-C++ Primer Exercise\n
+C++ Primer Exercise
+
 Sat,Jul13,2019
