@@ -7,5 +7,4 @@ int main()
     ri = 10;
     cout<<i<<" "<<ri<<endl;
     return 0;
-
 }
