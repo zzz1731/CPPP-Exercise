@@ -8,3 +8,6 @@ int main()
     cout<<i<<" "<<ri<<endl;
     return 0;
 }
+
+
+//执行结果：输出10 10
