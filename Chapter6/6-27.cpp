@@ -12,7 +12,7 @@ int main()
 int sum(initializer_list<int> il)
 {
 	int sum = 0;
-	for (const auto elem : il)
+	for (const auto &elem : il)
 	{
 		sum += elem;
 	}
