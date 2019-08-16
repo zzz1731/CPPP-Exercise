@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int(*func())[10];					//原始形式
@@ -20,7 +21,7 @@ decltype(odd) *func();				//decltype表达式形式
 
 int main()
 {
-	return 0;
+	return EXIT_SUCCESS;
 }
 
 //6-36 & 6-37
