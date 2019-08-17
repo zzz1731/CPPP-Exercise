@@ -12,8 +12,8 @@ int main()
 int sum(initializer_list<int> il)
 {
 	int sum = 0;
-	for (const auto &elem : il)
-	{
+	for (const auto &elem : il)					//这里把循环控制变量设为const reference其实并没有什么用
+	{											//Sat,Aug17,2019
 		sum += elem;
 	}
 	return sum;
