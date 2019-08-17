@@ -1,22 +1,23 @@
 #include <iostream>
+#include <string>
 #include <cstdlib>
 using namespace std;
 
-int(*func())[10];					//原始形式
+string(&func())[10];				//原始形式
 
 
-typedef int arrT[10];
+typedef string arrT[10];
 
-using arrT = int[10];
+using arrT = string[10];
 
-arrT* func();						//类型别名形式
-
-
-auto func()->int(*)[10];			        //尾置返回类型形式
+arrT& func();						//类型别名形式
 
 
-int odd[] = { 0,1,2,3,4,5,6,7,8,9 };
-decltype(odd) *func();				        //decltype表达式形式
+auto func()->string(&)[10];			//尾置返回类型形式
+
+
+string str[10];
+decltype(str) &func();				//decltype表达式形式
 
 
 int main()
