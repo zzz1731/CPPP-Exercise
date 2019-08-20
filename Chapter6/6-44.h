@@ -1,4 +1,3 @@
-#include <string>
 
 inline bool isShorter(const string &s1, const string &s2)
 {
