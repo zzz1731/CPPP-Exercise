@@ -12,6 +12,8 @@ int mul_func(int, int);
 
 int div_func(int, int);
 
+void compute(int, int, int (*)(int, int));
+
 int main()
 {
     vector<int (*)(int, int)> fvec = {add_func, sub_func, mul_func, div_func}; //函数类型会自动转换为函数指针类型
@@ -23,6 +25,10 @@ int main()
     decltype(div_func) *fp4 = &div_func;
     vector<decltype(add_func) *> Fvec = {fp1, fp2, fp3, fp4};
 
+    for (auto f : fvec)
+    {
+        compute(3, 1, f);
+    }
     return EXIT_SUCCESS;
 }
 
@@ -47,6 +53,10 @@ int div_func(int i, int n)
     return i / n;
 }
 
-//编写4个函数，分别对两个 int 执行加、减、乘、除运算；
-//在上一题创建的 vector 对象中保存指向这些值的指针。
+void compute(int i, int n, int (*fp)(int, int))
+{
+    std::cout << fp(i, n) << std::endl;
+}
+
+//调用上述 vector 对象中的每个元素并输出结果。
 //Tue,Aug20,2019
