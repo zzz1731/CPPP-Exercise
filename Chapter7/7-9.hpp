@@ -1,6 +1,6 @@
 #pragma onece
-#ifndef _Person
-#define _Person
+#ifndef _PERSON
+#define _PERSON
 
 #include <string>
 using std::string;
