@@ -16,11 +16,12 @@ istream& f(istream& in)
 			in.clear();
 			in.ignore(100, '\n');
 			continue;
+			
 		}
-		cout<<endl;
-		in.clear();
-		return in;
+		cout << v << endl;
 	}
+	in.clear();
+	return in;
 }
 
 int main()
