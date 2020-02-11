@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool search_vec(vector<int>::iterator begin, vector<int>::iterator end, int num)
+bool search_vec(vector<int>::const_iterator begin, vector<int>::const_iterator end, int num)
 {
     bool flag = false;
     while (begin != end)
@@ -25,8 +25,8 @@ bool search_vec(vector<int>::iterator begin, vector<int>::iterator end, int num)
 int main()
 {
     vector<int> vec{1, 2, 3, 4, 5, 7, 8, 9};
-    cout << search_vec(vec.begin(), vec.end(), 7) << endl;
-    cout << search_vec(vec.begin(), vec.end(), 6) << endl;
+    cout << search_vec(vec.cbegin(), vec.cend(), 7) << endl;
+    cout << search_vec(vec.cbegin(), vec.cend(), 6) << endl;
 
     return 0;
 }
