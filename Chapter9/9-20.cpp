@@ -18,7 +18,7 @@ int main()
     //         ideq_odd.push_back(i);
     //     }
     // }
-    for (auto i : ilist)                                   //查看最低位，1：奇数  2：偶数
+    for (auto i : ilist)                                   //查看最低位，1：奇数  0：偶数
     {
         if (i & 1)
             ideq_odd.push_back(i);
