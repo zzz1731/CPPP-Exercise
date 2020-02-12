@@ -3,6 +3,8 @@
         "*.html": "html",
         "iostream": "cpp",
         "xstring": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "string": "cpp",
+        "deque": "cpp"
     }
 }
