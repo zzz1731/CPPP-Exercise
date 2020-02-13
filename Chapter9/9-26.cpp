@@ -11,10 +11,18 @@ int main()
     vector<int> ivec(begin(ia), end(ia));
     list<int> ilist(begin(ia), end(ia));
 
-    for (auto iter_vec = ivec.begin(); iter_vec != ivec.end(); ++iter_vec)
+    // for (auto iter_vec = ivec.begin(); iter_vec != ivec.end(); ++iter_vec)    这样写不对
+    // {
+    //     if (!(*iter_vec & 1))
+    //         iter_vec = ivec.erase(iter_vec);
+    // }
+    auto iter_vec = ivec.begin();
+    while (iter_vec != ivec.end())
     {
         if (!(*iter_vec & 1))
             iter_vec = ivec.erase(iter_vec);
+        else
+            ++iter_vec;
     }
 
     auto iter_list = ilist.begin();
