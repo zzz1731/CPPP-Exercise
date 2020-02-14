@@ -8,19 +8,24 @@ void insert_string_to_forwardlist(forward_list<string> &sflist, const string &s1
 {
     auto prev = sflist.before_begin();
     auto curr = sflist.begin();
+    
     while (curr != sflist.end())
     {
         if (*curr == s1)
         {
             sflist.insert_after(curr, s2);
+
             return;
         }
+
         prev=curr;
         ++curr;
         
     }
 
     sflist.insert_after(prev, s2);
+
+    return;
     
 }
 
