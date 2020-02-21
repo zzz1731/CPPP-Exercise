@@ -33,7 +33,7 @@ void biggies(vector<string> &words, vector<string>::size_type sz)
     auto count = words.end() - wc;
 
     cout << count << " words"
-         << " of length" << sz << " or longer" << endl;
+         << " of length " << sz << " or longer" << endl;
 
     for_each(wc, words.end(), [](const string &s) { cout << s << " "; });
 
