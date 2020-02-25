@@ -26,7 +26,7 @@ void biggies(vector<string> &words, vector<string>::size_type sz)
 
     auto bc = count_if(words.begin(), words.end(), bind(check_size, _1, sz));
 
-    cout << bc << " words of length" << sz << " or longer" << endl;
+    cout << bc << " words of length " << sz << " or longer" << endl;
 }
 
 int main()
