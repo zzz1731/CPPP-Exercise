@@ -41,3 +41,4 @@ int main()
 
 //一个 vector 中保存1到9共9个值，将其拷贝到三个其他容器中。分别使用 inserter、back_inserter 和 front_inserter 将元素添加到三个容器中。
 //对每种 inserter,估计输出序列是怎样的，运行程序验证你的估计是否正确。
+//Wed,Feb26,2020
