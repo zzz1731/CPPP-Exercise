@@ -17,7 +17,7 @@ map<string, string> buildMap(ifstream &map_file)
         if (value.size() > 1)
             trans_map[key] = value.substr(1);
         else
-            throw runtime_error("no rule for" + key);
+            throw runtime_error("no rule for " + key);
     }
 
     return trans_map;
